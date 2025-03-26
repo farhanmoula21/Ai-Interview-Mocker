@@ -47,7 +47,7 @@ const Interview = ({ params }) => {
             </h2>
           </div>
           <div className="p-5 border rounded-lg border-yellow-300 bg-yellow-100">
-            <h2 className="flex gap-2 items-center text-yellow-700 mb-2">
+            <h2 className="flex gap-2 items-center text-yellow-500 mb-2">
               <Lightbulb />
               <strong>Information</strong>
             </h2>

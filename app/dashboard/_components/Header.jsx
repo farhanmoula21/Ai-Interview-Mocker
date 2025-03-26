@@ -34,13 +34,13 @@ const Header = ({ logo }) => {
     <div className=" bg-secondary shadow-sm ">
       <div className="w-[80%] m-auto flex gap-4 items-center justify-between">
         <Link className="hidden md:block"  href="/dashboard">
-          <Image src={logo} width={80} height={80} alt="logo" />
+          <Image src={logo} width={160} height={100} alt="logo" />
         </Link>
         <ul className="hidden md:flex gap-6">
           <Link href="/dashboard">
             <li
-              className={`hover:text-black hover:font-bold transition-all cursor-pointer ${
-                path == "/dashboard" && "text-black font-bold"
+              className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${
+                path == "/dashboard" && "text-primary font-bold"
               }`}
             >
               Dashboard
@@ -48,8 +48,8 @@ const Header = ({ logo }) => {
           </Link>
           <Link href="/dashboard/question">
           <li
-            className={`hover:text-black hover:font-bold transition-all cursor-pointer ${
-              path == "/dashboard/question" && "text-black font-bold"
+            className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${
+              path == "/dashboard/question" && "text-primary font-bold"
             }`}
           >
             Questions
@@ -58,8 +58,8 @@ const Header = ({ logo }) => {
           
           <Link href="/dashboard/upgrade">
             <li
-              className={`hover:text-black hover:font-bold transition-all cursor-pointer ${
-                path == "/dashboard/upgrade" && "text-black font-bold"
+              className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${
+                path == "/dashboard/upgrade" && "text-primary font-bold"
               }`}
             >
               Upgrade
@@ -68,8 +68,8 @@ const Header = ({ logo }) => {
 
           <Link href="/dashboard/howit">
             <li
-              className={`hover:text-black hover:font-bold transition-all cursor-pointer ${
-                path == "/dashboard/howit" && "text-black font-bold"
+              className={`hover:text-primary hover:font-bold transition-all cursor-pointer ${
+                path == "/dashboard/howit" && "text-primary font-bold"
               }`}
             >
               How it works?

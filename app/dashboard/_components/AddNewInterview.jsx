@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
+
 import {
   Dialog,
   DialogClose,
@@ -21,6 +22,7 @@ import { v4 as uuidv4 } from "uuid";
 import { useUser } from "@clerk/nextjs";
 import moment from "moment";
 import { useRouter } from "next/navigation";
+
 
 const AddNewInterview = () => {
   const [openDailog, setOpenDialog] = useState(false);
@@ -64,7 +66,7 @@ const AddNewInterview = () => {
           jobDesc: jobDesc,
           jobExperience: jobExperience,
           createdBy: user?.primaryEmailAddress?.emailAddress,
-          createdAt: moment().format("YYYY-MM-DD"),
+          createdAt: moment().format("DD-MM-YYYY"),
         })
         .returning({ mockId: MockInterview.mockId });
         

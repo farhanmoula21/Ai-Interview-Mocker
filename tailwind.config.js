@@ -48,17 +48,17 @@ module.exports = {
         },
       },
       colors: {
-        newBlack: {
-          DEFAULT: "#000",
-          100: '#000319'
-        },
+        // newBlack: {
+        //   DEFAULT: "#000",
+        //   100: '#000319'
+        // },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#4845D2",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {

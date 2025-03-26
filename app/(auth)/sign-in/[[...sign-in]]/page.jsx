@@ -32,8 +32,8 @@ export default function Page() {
             </h2>
 
             <p className="mt-4 leading-relaxed text-white/90">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              nam dolorum aliquam, quibusdam aperiam voluptatum.
+            Prepare for your next big opportunity with realistic, AI-powered mock interviews. Practice answering 
+            industry-specific questions and receive instant feedback to improve your skills and confidence.
             </p>
           </div>
         </section>
@@ -60,12 +60,12 @@ export default function Page() {
               </a>
 
               <h1 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl dark:text-white">
-                Welcome to Squid 🦑
+                Welcome to AI interview 📊
               </h1>
 
               <p className="mt-4 leading-relaxed text-gray-500 dark:text-gray-400">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi nam dolorum aliquam, quibusdam aperiam voluptatum.
+              Prepare for your next big opportunity with realistic, AI-powered mock interviews. Practice answering 
+              industry-specific questions and receive instant feedback to improve your skills and confidence.
               </p>
             </div>
             <SignIn />
