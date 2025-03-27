@@ -1,7 +1,7 @@
 export default[
     {
         link:'https://buy.stripe.com/test_9AQ4jI8fffk75igcMN',
-        price:150,
+        price:7.99,
         priceId:'price_1PUNYmSISOkj08jR30L0UpyY',
         duration:'Monthly'
     },

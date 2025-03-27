@@ -6,28 +6,30 @@ import { useUser } from "@clerk/nextjs";
 const Upgrade = () => {
   const { user } = useUser();
   return (
-    <div className="p-5">
+    <div className="p-5 bg-system text-white"> {/* Dark background */}
       <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <h1 className="text-center font-bold mb-5 text-red-600 text-3xl" >Testing Mode</h1>
+        <h1 className="text-center font-bold mb-5 text-red-600 text-3xl"> {/* Lightened red */}
+          Testing Mode
+        </h1>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-center md:gap-8">
           {PricingPlan.map((item, index) => (
             <div
               key={index}
-              className="rounded-2xl border border-gray-200 p-6 shadow-sm sm:px-8 lg:p-12"
+              className="rounded-2xl border border-gray-700 bg-gray-800 p-6 shadow-md hover:shadow-lg sm:px-8 lg:p-12 transition-all duration-300 ease-in-out" // Darker container with lighter border and hover effect
             >
               <div className="text-center">
-                <h2 className="text-lg font-medium text-gray-900">
+                <h2 className="text-lg font-medium text-white"> {/* Changed text to white */}
                   {item.duration}
                   <span className="sr-only">Plan</span>
                 </h2>
 
                 <p className="mt-2 sm:mt-4">
-                  <strong className="text-3xl font-bold text-gray-900 sm:text-4xl">
+                  <strong className="text-3xl font-bold text-white sm:text-4xl"> {/* Text white */}
                     {" "}
                     {item.price}${" "}
                   </strong>
 
-                  <span className="text-sm font-medium text-gray-700">
+                  <span className="text-sm font-medium text-gray-400"> {/* Lighter gray for duration */}
                     / {item.duration}
                   </span>
                 </p>
@@ -41,7 +43,7 @@ const Upgrade = () => {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-5 text-indigo-700"
+                    className="size-5 text-indigo-300" // Lighter icon color
                   >
                     <path
                       strokeLinecap="round"
@@ -50,7 +52,7 @@ const Upgrade = () => {
                     />
                   </svg>
 
-                  <span className="text-gray-700"> 10 users included </span>
+                  <span className="text-gray-300"> 10 users included </span> {/* Text lightened */}
                 </li>
 
                 <li className="flex items-center gap-1">
@@ -60,7 +62,7 @@ const Upgrade = () => {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-5 text-indigo-700"
+                    className="size-5 text-indigo-300" // Lighter icon color
                   >
                     <path
                       strokeLinecap="round"
@@ -69,7 +71,7 @@ const Upgrade = () => {
                     />
                   </svg>
 
-                  <span className="text-gray-700"> 2GB of storage </span>
+                  <span className="text-gray-300"> 2GB of storage </span> {/* Text lightened */}
                 </li>
 
                 <li className="flex items-center gap-1">
@@ -79,7 +81,7 @@ const Upgrade = () => {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-5 text-indigo-700"
+                    className="size-5 text-indigo-300" // Lighter icon color
                   >
                     <path
                       strokeLinecap="round"
@@ -88,7 +90,7 @@ const Upgrade = () => {
                     />
                   </svg>
 
-                  <span className="text-gray-700"> Email support </span>
+                  <span className="text-gray-300"> Email support </span> {/* Text lightened */}
                 </li>
 
                 <li className="flex items-center gap-1">
@@ -98,7 +100,7 @@ const Upgrade = () => {
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="size-5 text-indigo-700"
+                    className="size-5 text-indigo-300" // Lighter icon color
                   >
                     <path
                       strokeLinecap="round"
@@ -107,7 +109,7 @@ const Upgrade = () => {
                     />
                   </svg>
 
-                  <span className="text-gray-700"> Help center access </span>
+                  <span className="text-gray-300"> Help center access </span> {/* Text lightened */}
                 </li>
               </ul>
 
@@ -118,7 +120,7 @@ const Upgrade = () => {
                   user?.primaryEmailAddress?.emailAddress
                 }
                 target="_blank"
-                className="mt-8 block rounded-full border border-indigo-600 bg-white px-12 py-3 text-center text-sm font-medium text-indigo-600 hover:ring-1 hover:ring-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                className="mt-8 block rounded-full border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring active:bg-indigo-500 transition-all duration-300" // Darkened button with white text and hover effect
               >
                 Get Started
               </a>

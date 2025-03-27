@@ -22,7 +22,7 @@ import { Question } from "@/utils/schema";
 import { useRouter } from "next/navigation";
 
 const AddQuestions = () => {
-  const [openDailog, setOpenDialog] = useState(false);
+  const [openDialog, setOpenDialog] = useState(false);  // Fixed typo from openDailog to openDialog
   const [jobPosition, setJobPosition] = useState("");
   const [jobDesc, setJobDesc] = useState("");
   const [typeQuestion, setTypeQuestion] = useState("");
@@ -105,6 +105,7 @@ const AddQuestions = () => {
       setLoading(false);
     }
   };
+
   return (
     <div>
       <div
@@ -114,7 +115,8 @@ const AddQuestions = () => {
         <h2 className=" text-lg text-center">+ Add New Questions</h2>
       </div>
 
-      <Dialog open={openDailog}>
+      {/* Added onOpenChange for proper dialog state management */}
+      <Dialog open={openDialog} onOpenChange={setOpenDialog}>
         <DialogContent>
           <DialogHeader>
             <DialogTitle>What model questions are you seeking</DialogTitle>
@@ -188,7 +190,7 @@ const AddQuestions = () => {
                 <div className="flex gap-5 justify-end">
                   <Button
                     type="button"
-                    variant="goast"
+                    variant="ghost" // Fixed variant typo
                     onClick={() => setOpenDialog(false)}
                   >
                     Cancel

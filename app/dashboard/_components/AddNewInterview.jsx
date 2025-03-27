@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 
-
 import {
   Dialog,
   DialogClose,
@@ -23,9 +22,8 @@ import { useUser } from "@clerk/nextjs";
 import moment from "moment";
 import { useRouter } from "next/navigation";
 
-
 const AddNewInterview = () => {
-  const [openDailog, setOpenDialog] = useState(false);
+  const [openDialog, setOpenDialog] = useState(false);
   const [jobPosition, setJobPosition] = useState();
   const [jobDesc, setJobDesc] = useState();
   const [jobExperience, setJobExperience] = useState();
@@ -53,7 +51,6 @@ const AddNewInterview = () => {
       .replace("```", "")
       .trim();
     console.log(JSON.parse(MockJsonResp));
-    // const parsedResp = MockJsonResp
     setJsonResponse(MockJsonResp);
 
     if (MockJsonResp) {
@@ -90,22 +87,22 @@ const AddNewInterview = () => {
       >
         <h2 className=" text-lg text-center">+ Add New</h2>
       </div>
-      <Dialog open={openDailog}>
+      <Dialog open={openDialog} onOpenChange={setOpenDialog}>
         <DialogContent className="max-w-2xl">
           <DialogHeader>
             <DialogTitle className="text-2xl">
-              Tell us more about your job interviwing
+              Tell us more about your job interviewing
             </DialogTitle>
             <DialogDescription>
               <form onSubmit={onSubmit}>
                 <div className="my-3">
                   <h2>
-                    Add Details about your job position, job descritpion and
+                    Add Details about your job position, job description, and
                     years of experience
                   </h2>
 
                   <div className="mt-7 my-3">
-                    <label className="text-black">Job Role/job Position</label>
+                    <label className="text-black">Job Role/Position</label>
                     <Input
                       className="mt-1"
                       placeholder="Ex. Full stack Developer"
@@ -115,7 +112,7 @@ const AddNewInterview = () => {
                   </div>
                   <div className="my-5">
                     <label className="text-black">
-                      Job Description/ Tech stack (In Short)
+                      Job Description/Tech Stack (In Short)
                     </label>
                     <Textarea
                       className="placeholder-opacity-50"
@@ -139,7 +136,7 @@ const AddNewInterview = () => {
                 <div className="flex gap-5 justify-end">
                   <Button
                     type="button"
-                    variant="goast"
+                    variant="ghost"
                     onClick={() => setOpenDialog(false)}
                   >
                     Cancel
@@ -158,6 +155,7 @@ const AddNewInterview = () => {
               </form>
             </DialogDescription>
           </DialogHeader>
+          <DialogClose />
         </DialogContent>
       </Dialog>
     </div>
