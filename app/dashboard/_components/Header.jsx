@@ -31,10 +31,10 @@ const Header = ({ logo }) => {
     console.log(path);
   }, []);
   return (
-    <div className=" bg-secondary shadow-sm ">
+    <div className=" bg-gray-100 dark:bg-gray-900 shadow-sm ">
       <div className="w-[80%] m-auto flex gap-4 items-center justify-between">
         <Link className="hidden md:block"  href="/dashboard">
-          <Image src={logo} width={160} height={100} alt="logo" />
+        <Image src="/logosvg.svg" width={160} height={100} alt="logo" />
         </Link>
         <ul className="hidden md:flex gap-6">
           <Link href="/dashboard">
@@ -90,7 +90,7 @@ const Header = ({ logo }) => {
             )}
           </button>
         </div>
-        <div className="flex gap-10" >
+        <div className="flex gap-10 " >
           <ModeToggle  />
           {isUserButtonLoaded ? <UserButton /> : <SkeletonLoader />}
         </div>

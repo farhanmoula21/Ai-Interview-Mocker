@@ -15,21 +15,21 @@ const Upgrade = () => {
           {PricingPlan.map((item, index) => (
             <div
               key={index}
-              className="rounded-2xl border border-gray-700 bg-gray-800 p-6 shadow-md hover:shadow-lg sm:px-8 lg:p-12 transition-all duration-300 ease-in-out" // Darker container with lighter border and hover effect
+              className="rounded-2xl border border-gray-700 bg-gray-100 dark:bg-gray-900 p-6 shadow-md hover:shadow-lg sm:px-8 lg:p-12 transition-all duration-300 ease-in-out" // Darker container with lighter border and hover effect
             >
               <div className="text-center">
-                <h2 className="text-lg font-medium text-white"> {/* Changed text to white */}
+                <h2 className="text-lg font-medium text-gray-600 dark:text-gray-300"> {/* Changed text to white */}
                   {item.duration}
                   <span className="sr-only">Plan</span>
                 </h2>
 
                 <p className="mt-2 sm:mt-4">
-                  <strong className="text-3xl font-bold text-white sm:text-4xl"> {/* Text white */}
+                  <strong className="text-3xl font-bold text-gray-600 dark:text-gray-300 sm:text-4xl"> {/* Text white */}
                     {" "}
                     {item.price}${" "}
                   </strong>
 
-                  <span className="text-sm font-medium text-gray-400"> {/* Lighter gray for duration */}
+                  <span className="text-sm font-medium text-gray-600 dark:text-gray-300"> {/* Lighter gray for duration */}
                     / {item.duration}
                   </span>
                 </p>
@@ -52,7 +52,7 @@ const Upgrade = () => {
                     />
                   </svg>
 
-                  <span className="text-gray-300"> 10 users included </span> {/* Text lightened */}
+                  <span className="text-gray-600 dark:text-gray-300"> 10 users included </span> {/* Text lightened */}
                 </li>
 
                 <li className="flex items-center gap-1">
@@ -71,7 +71,7 @@ const Upgrade = () => {
                     />
                   </svg>
 
-                  <span className="text-gray-300"> 2GB of storage </span> {/* Text lightened */}
+                  <span className="text-gray-600 dark:text-gray-300"> 2GB of storage </span> {/* Text lightened */}
                 </li>
 
                 <li className="flex items-center gap-1">
@@ -90,7 +90,7 @@ const Upgrade = () => {
                     />
                   </svg>
 
-                  <span className="text-gray-300"> Email support </span> {/* Text lightened */}
+                  <span className="text-gray-600 dark:text-gray-300"> Email support </span> {/* Text lightened */}
                 </li>
 
                 <li className="flex items-center gap-1">
@@ -109,7 +109,7 @@ const Upgrade = () => {
                     />
                   </svg>
 
-                  <span className="text-gray-300"> Help center access </span> {/* Text lightened */}
+                  <span className="text-gray-600 dark:text-gray-300"> Help center access </span> {/* Text lightened */}
                 </li>
               </ul>
 

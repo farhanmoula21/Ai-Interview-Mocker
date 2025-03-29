@@ -109,7 +109,7 @@ const AddQuestions = () => {
   return (
     <div>
       <div
-        className="p-10 rounded-lg border bg-secondary hover:scale-105 hover:shadow-sm transition-all cursor-pointer"
+        className="p-10 rounded-lg border bg-gray-100 dark:bg-gray-900 hover:scale-105 hover:shadow-sm transition-all cursor-pointer"
         onClick={() => setOpenDialog(true)}
       >
         <h2 className=" text-lg text-center">+ Add New Questions</h2>
@@ -117,7 +117,7 @@ const AddQuestions = () => {
 
       {/* Added onOpenChange for proper dialog state management */}
       <Dialog open={openDialog} onOpenChange={setOpenDialog}>
-        <DialogContent>
+        <DialogContent className ="max-w-2xl bg-gray-100 dark:bg-gray-900" >
           <DialogHeader>
             <DialogTitle>What model questions are you seeking</DialogTitle>
             <DialogDescription>
@@ -129,7 +129,7 @@ const AddQuestions = () => {
                   </h2>
 
                   <div className="mt-7 my-3">
-                    <label className="text-black">Job Role/job Position</label>
+                    <label className="text-gray-600 dark:text-gray-300">Job Role/job Position</label>
                     <Input
                       className="mt-1"
                       value={jobPosition}
@@ -139,7 +139,7 @@ const AddQuestions = () => {
                     />
                   </div>
                   <div className="my-4">
-                    <label className="text-black">
+                    <label className="text-gray-600 dark:text-gray-300">
                       Job Description/ Tech stack (In Short)
                     </label>
                     <Textarea
@@ -151,7 +151,7 @@ const AddQuestions = () => {
                     />
                   </div>
                   <div className="my-4">
-                    <label className="text-black">
+                    <label className="text-gray-600 dark:text-gray-300">
                       Type of Questions (In Short)
                     </label>
                     <Input
@@ -163,7 +163,7 @@ const AddQuestions = () => {
                     />
                   </div>
                   <div className="my-4">
-                    <label className="text-black">
+                    <label className="text-gray-600 dark:text-gray-300">
                       Company are you seeking
                     </label>
                     <Input
@@ -175,7 +175,7 @@ const AddQuestions = () => {
                     />
                   </div>
                   <div className="my-4">
-                    <label className="text-black">Years of Experience</label>
+                    <label className="text-gray-600 dark:text-gray-300">Years of Experience</label>
                     <Input
                       className="mt-1"
                       placeholder="Ex. 5"

@@ -82,15 +82,15 @@ const AddNewInterview = () => {
   return (
     <div>
       <div
-        className="p-10 rounded-lg border bg-secondary hover:scale-105 hover:shadow-sm transition-all cursor-pointer"
+        className="p-10 rounded-lg border bg-gray-100 dark:bg-gray-900 hover:scale-105 hover:shadow-sm transition-all cursor-pointer"
         onClick={() => setOpenDialog(true)}
       >
         <h2 className=" text-lg text-center">+ Add New</h2>
       </div>
       <Dialog open={openDialog} onOpenChange={setOpenDialog}>
-        <DialogContent className="max-w-2xl">
+        <DialogContent className="max-w-2xl bg-gray-100 dark:bg-gray-900">
           <DialogHeader>
-            <DialogTitle className="text-2xl">
+            <DialogTitle className="text-2xl text-gray-600 dark:text-gray-300">
               Tell us more about your job interviewing
             </DialogTitle>
             <DialogDescription>
@@ -102,7 +102,7 @@ const AddNewInterview = () => {
                   </h2>
 
                   <div className="mt-7 my-3">
-                    <label className="text-black">Job Role/Position</label>
+                    <label className="text-gray-600 dark:text-gray-300">Job Role/Position</label>
                     <Input
                       className="mt-1"
                       placeholder="Ex. Full stack Developer"
@@ -111,7 +111,7 @@ const AddNewInterview = () => {
                     />
                   </div>
                   <div className="my-5">
-                    <label className="text-black">
+                    <label className="text-gray-600 dark:text-gray-300">
                       Job Description/Tech Stack (In Short)
                     </label>
                     <Textarea
@@ -122,7 +122,7 @@ const AddNewInterview = () => {
                     />
                   </div>
                   <div className="my-5">
-                    <label className="text-black">Years of Experience</label>
+                    <label className="text-gray-600 dark:text-gray-300">Years of Experience</label>
                     <Input
                       className="mt-1"
                       placeholder="Ex. 5"

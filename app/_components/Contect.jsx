@@ -50,8 +50,8 @@ const Contect = () => {
   };
   return (
     <div className="container mx-auto text-center">
-      <h2 className="text-4xl font-bold text-gray-800">Get In Touch</h2>
-      <p className="mt-4 text-lg text-gray-600">
+      <h2 className="text-4xl font-bold text-gray-800 dark:text-white ">Get In Touch</h2>
+      <p className="mt-4 text-gray-600 dark:text-gray-300">
         Have any questions? Reach out to us and we'll get back to you as soon as
         possible.
       </p>
