@@ -34,7 +34,7 @@ const Header = ({ logo }) => {
     <div className=" bg-gray-100 dark:bg-gray-900 shadow-sm ">
       <div className="w-[80%] m-auto flex gap-4 items-center justify-between">
         <Link className="hidden md:block"  href="/dashboard">
-        <Image src="/logosvg.svg" width={160} height={100} alt="logo" />
+        <Image src="/logoT.svg" width={300} height={260} alt="logo" />
         </Link>
         <ul className="hidden md:flex gap-6">
           <Link href="/dashboard">
