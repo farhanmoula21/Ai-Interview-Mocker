@@ -1,8 +1,8 @@
 /** @type { import("drizzle-kit").Config } */
 export default {
-    schema: "./utils/schema.js",
-    dialect: 'postgresql',
-    dbCredentials: {
-        url: 'postgresql://neondb_owner:npg_89CxRteEkpVv@ep-delicate-snowflake-a5txajoy-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require',
-    }
+  schema: "./utils/schema.js",
+  dialect: "postgresql",
+  dbCredentials: {
+    url: "postgresql://aiMockInterview_owner:npg_iLx9DBOJ1alf@ep-yellow-river-a8zfx4po-pooler.eastus2.azure.neon.tech/aiMockInterview?sslmode=require",
+  },
 };
